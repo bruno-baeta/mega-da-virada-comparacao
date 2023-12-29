@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega da Virada</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mega da Virada - Jogos</h1>
+
+        <button id="limpar-jogos" class="oculto">Limpar Jogos</button>
+
+        <button id="mostrar-form-jogo" class="oculto">Adicionar Novo Jogo</button>
+        <div id="form-jogo" class="oculto">
+            <input type="text" id="numeros-jogo" placeholder="Digite os números (ex: 01 02 03 04 05 06)">
+            <button id="add-jogo" type="submit">Adicionar Jogo</button>
+        </div>
+
+        <button id="mostrar-numeros-sorteados">Inserir Números Sorteados</button>
+        <div id="numeros-sorteados" class="oculto">
+            <input type="text" id="entrada-numeros-sorteados" placeholder="Digite os números sorteados">
+            <button id="verificar-jogos">Verificar Jogos</button>
+        </div>
+
+        <h2>Números Sorteados</h2>
+        <div id="sorteados-exibicao"></div>
+
+        <h2>jogos</h2>
+        <div id="jogos"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
