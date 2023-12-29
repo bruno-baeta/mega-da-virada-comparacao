@@ -95,3 +95,7 @@ button:hover {
 .bolinha.acertou {
     background-color: #10c93e; /* Verde para números acertados */
 }
+
+#add-jogo {
+    background-color: #10c93e;
+}
