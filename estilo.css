@@ -34,6 +34,11 @@ input, button {
     font-family: 'Baloo 2', cursive;
 }
 
+::placeholder {
+    color: white; /* Cor do texto */
+    opacity: 1; /* Opacidade do texto */
+}
+
 button {
     background-color: #FFCA00; /* Cor de fundo do botão em amarelo claro */
     color: #1e2125; /* Cor do texto do botão */
