@@ -3,10 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     carregarJogosSalvos();
 });
 
-document.getElementById('mostrar-form-jogo').addEventListener('click', function() {
-    document.getElementById('form-jogo').classList.toggle('oculto');
-});
-
 document.getElementById('add-jogo').addEventListener('click', function(e) {
     e.preventDefault();
     let jogo = document.getElementById('numeros-jogo').value;
