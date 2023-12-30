@@ -20,10 +20,6 @@ function limparJogosSalvos() {
     document.getElementById('jogos').innerHTML = ''; // Limpa a exibição na página
 }
 
-document.getElementById('mostrar-numeros-sorteados').addEventListener('click', function() {
-    document.getElementById('numeros-sorteados').classList.toggle('oculto');
-});
-
 document.getElementById('verificar-jogos').addEventListener('click', function() {
     let sorteados = document.getElementById('entrada-numeros-sorteados').value.split(' ');
     verificarJogos(sorteados);
