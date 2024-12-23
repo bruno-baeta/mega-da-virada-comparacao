@@ -1,14 +1,16 @@
 const fs = require('fs');
 const path = require('path');
 const axios = require('axios');
+const { HttpsProxyAgent } = require('https-proxy-agent');
 
 const ENDPOINT = 'https://servicebus2.caixa.gov.br/portaldeloterias/api/megasena/2809';
 const RESULT_FILE = path.join(__dirname, '../data/resultados.txt');
 
 // Configuração do cabeçalho com User-Agent
-const HttpsProxyAgent = require('https-proxy-agent');
-
-const proxyAgent = new HttpsProxyAgent('http://proxy_host:proxy_port'); // Substitua proxy_host e proxy_port
+const proxyAgent = new HttpsProxyAgent({
+    host: '51.158.68.68', // Host do proxy público
+    port: 8811,           // Porta do proxy público
+});
 
 const axiosConfig = {
     headers: {
