@@ -63,16 +63,6 @@ h1, h2 {
     filter: brightness(1.2); /* Fica mais brilhante */
 }
 
-/* Layout Responsivo */
-@media (max-width: 600px) {
-    .numero {
-        width: 28px; /* Reduzido para caber mais bolinhas */
-        height: 28px;
-        font-size: 0.8rem; /* Tamanho do texto ajustado */
-        margin: 4px; /* Espaçamento menor */
-    }
-}
-
 .botao-icon {
     position: fixed;
     bottom: 20px;
@@ -115,7 +105,7 @@ h1, h2 {
 }
 
 .modal-conteudo {
-    background-color: #30343f;
+    background-color: #172222;
     margin: 15% auto;
     padding: 20px;
     border-radius: 12px;
@@ -198,4 +188,29 @@ h1, h2 {
     display: inline-block; /* Garante que o ícone tenha dimensões */
     line-height: 1; /* Remove possíveis deslocamentos verticais */
     color: inherit; /* Usa a cor do botão */
+}
+
+/* Layout Responsivo */
+@media (max-width: 600px) {
+    .numero {
+        width: 23px; /* Reduzido para caber mais bolinhas */
+        height: 23px;
+        font-size: 0.8rem; /* Tamanho do texto ajustado */
+        margin: 4px; /* Espaçamento menor */
+    }
+
+    .input-numero {
+        width: 40px; /* Ajusta largura em telas menores */
+        height: 40px; /* Ajusta altura em telas menores */
+        font-size: 16px; /* Reduz o tamanho da fonte */
+    }
+
+    .input-container {
+        gap: 5px; /* Reduz o espaço entre os inputs */
+    }
+
+    .botao {
+        font-size: 14px;
+        padding: 8px 16px; /* Botão menor */
+    }
 }
