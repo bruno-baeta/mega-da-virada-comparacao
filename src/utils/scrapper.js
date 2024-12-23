@@ -34,7 +34,7 @@ async function fetchResults() {
             console.log('Números ainda não disponíveis.');
         }
     } catch (error) {
-        console.error('Erro ao buscar os dados:', error.message);
+        console.error('Erro ao buscar os dados:', error.toString());
     }
 }
 
