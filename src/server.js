@@ -35,7 +35,7 @@ function enviarDadosParaClientes() {
 }
 
 // Agendar o cron job no servidor para rodar no dia 31/12/2024 às 20h e repetir a cada 5 minutos
-cron.schedule('*/5 * * * *', async () => {
+app.get('/api/cron', async (req, res) => {
     console.log('Executando scraping agendado...');
     await fetchResults(); // Aguarda salvar os dados no arquivo
 
