@@ -6,14 +6,40 @@
     <title>Mega Sena - Resultados</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h2>Números Sorteados</h2>
+        <h2>NÚMEROS SORTEADOS</h2>
         <div class="sorteados"></div>
-        <h2>Jogos</h2>
+        <h2>JOGOS</h2>
         <div id="jogos"></div>
+        <!-- Botão para abrir o modal -->
+        <button id="abrirModal" class="botao-icon">
+            <i class="fas fa-plus"></i>
+        </button>
     </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-conteudo">
+            <span id="fecharModal" class="fechar">&times;</span>
+            <h2>Adicionar Números Sorteados</h2>
+            <div class="input-container">
+                <input type="text" class="input-numero" maxlength="2" placeholder="00" />
+                <input type="text" class="input-numero" maxlength="2" placeholder="00" />
+                <input type="text" class="input-numero" maxlength="2" placeholder="00" />
+                <input type="text" class="input-numero" maxlength="2" placeholder="00" />
+                <input type="text" class="input-numero" maxlength="2" placeholder="00" />
+                <input type="text" class="input-numero" maxlength="2" placeholder="00" />
+            </div>
+            <button id="adicionarNumeros" class="botao">Adicionar</button>
+        </div>
+    </div>
+    
+
+    <!-- Font Awesome para ícones -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>

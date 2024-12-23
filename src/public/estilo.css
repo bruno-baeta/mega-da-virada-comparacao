@@ -73,3 +73,129 @@ h1, h2 {
     }
 }
 
+.botao-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1B7A54; /* Verde natural */
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.botao-icon i {
+    pointer-events: none; /* Garante que o clique seja no botão, não no ícone */
+}
+
+.botao-icon:hover {
+    transform: scale(1.1);
+    background-color: #155c40;
+}
+
+/* Estilo do Modal */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-conteudo {
+    background-color: #30343f;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 12px;
+    width: 80%;
+    color: #ffffff;
+    text-align: center;
+}
+
+.modal-conteudo h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Container dos inputs */
+.input-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos inputs de número */
+.input-numero {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #404450; /* Cinza escuro */
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    outline: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.input-numero:focus {
+    background-color: #505560; /* Cinza mais claro */
+    transform: scale(1.1);
+}
+
+.input-numero::placeholder {
+    color: #808080; /* Cinza para o placeholder */
+}
+
+
+/* Botão no modal */
+.botao {
+    background-color: #1B7A54; /* Verde natural */
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #155c40;
+}
+
+/* Botão de fechar o modal */
+.fechar {
+    color: #ffffff;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.fechar:hover {
+    color: #ff6b6b;
+}
+
+.botao-icon i {
+    font-size: 24px; /* Define o tamanho do ícone */
+    display: inline-block; /* Garante que o ícone tenha dimensões */
+    line-height: 1; /* Remove possíveis deslocamentos verticais */
+    color: inherit; /* Usa a cor do botão */
+}
