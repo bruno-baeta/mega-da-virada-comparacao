@@ -1,0 +1,75 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #172222; /* Fundo principal roxo escuro */
+    color: #e0e0e0; /* Texto claro */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Container Principal */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #172222; /* Fundo igual ao body */
+    border-radius: 12px;
+}
+
+/* Títulos */
+h1, h2 {
+    margin: 20px 0;
+    font-weight: 600;
+    color: #e0e0e0; /* Texto cinza claro */
+    text-transform: uppercase;
+}
+
+/* Bolinhas de Números */
+.numero {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+    background-color: #30343f; /* Cinza com tom azul escuro */
+    color: #ffffff; /* Texto claro */
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); /* Sombra leve */
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+/* Bolinhas de Acertos (Match) */
+.numero.acertou {
+    background-color: #1B7A54; /* Verde natural */
+    color: #ffffff; /* Texto claro */
+    box-shadow: 0 4px 10px rgba(76, 175, 80, 0.6); /* Sombra verde */
+    transform: scale(1.1); /* Leve aumento para destaque */
+}
+
+/* Bolinhas Sorteadas */
+.numero.sorteado {
+    background-color: #61BCFF; /* Laranja vibrante */
+    color: #ffffff; /* Texto claro */
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.6); /* Sombra laranja */
+}
+
+/* Efeitos ao Passar o Mouse */
+.numero:hover {
+    transform: scale(1.2); /* Cresce suavemente */
+    filter: brightness(1.2); /* Fica mais brilhante */
+}
+
+/* Layout Responsivo */
+@media (max-width: 600px) {
+    .numero {
+        width: 28px; /* Reduzido para caber mais bolinhas */
+        height: 28px;
+        font-size: 0.8rem; /* Tamanho do texto ajustado */
+        margin: 4px; /* Espaçamento menor */
+    }
+}
+
