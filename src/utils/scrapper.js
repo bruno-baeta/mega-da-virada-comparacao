@@ -6,10 +6,15 @@ const ENDPOINT = 'https://servicebus2.caixa.gov.br/portaldeloterias/api/megasena
 const RESULT_FILE = path.join(__dirname, '../data/resultados.txt');
 
 // Configuração do cabeçalho com User-Agent
+const HttpsProxyAgent = require('https-proxy-agent');
+
+const proxyAgent = new HttpsProxyAgent('http://proxy_host:proxy_port'); // Substitua proxy_host e proxy_port
+
 const axiosConfig = {
     headers: {
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
     },
+    httpsAgent: proxyAgent,
 };
 
 // Função para buscar os resultados da API
